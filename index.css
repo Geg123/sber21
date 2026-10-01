@@ -1,0 +1,77 @@
+/* Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Удобно считать размеры */
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif; /* Строгий шрифт */
+  line-height: 1.5; /* Межстрочный интервал */
+  color: #242424;
+  background-color: #fde3d9; /* Пастельно-персиковый фон */
+  background-image: linear-gradient(170deg, #fde3d9, #ffe6e0); /* Мягкий градиент */
+}
+
+.dimg {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Шапка сайта */
+header.hero-section {
+  text-align: center;
+  padding: 4rem 2rem; /* Увеличенные отступы */
+  background-color: #fde3d9;
+  backdrop-filter: blur(10px); /* Эффект размытия фона под шапкой */
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+a[href^="https://t.me"] { /* Ссылка на бота */
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #ffae8e;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+a[href^="https://t.me"]:hover {
+  transform: translateY(-2px); /* Легкая анимация при наведении */
+}
+
+/* Основные секции */
+section {
+  max-width: 60ch; /* Ограничение ширины для удобного чтения */
+  margin: 0 auto 4rem;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+p,
+li {
+  font-size: 18px; /* Комфортный размер */
+  margin-top: 1.25rem;
+}
+
+ol li::before {
+  content: "🔹";
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+code {
+  color: #69c;
+  font-weight: bold;
+  background-color: #fafafa;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+}
